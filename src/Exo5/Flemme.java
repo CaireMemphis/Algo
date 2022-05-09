@@ -3,7 +3,7 @@ package Exo5;
 public class Flemme {
     public static void Flemme() {
 
-        int[] notes = {10, 14, 8, 4, 17, 14, 15,20,11,8,7,6,19,17,15,9,10,11,4,1,2,0,3,20};
+        float[] notes = {10, 14, 8, 4, 17, 14, 15,20,11,8,7,6,19,17,15,9,10,11,4,1,2,0,3,20};
         int taille = notes.length;
         for (int i = 0; i < taille; i++) {
 
