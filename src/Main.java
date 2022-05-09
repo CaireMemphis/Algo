@@ -4,7 +4,9 @@ import Exo5.Flemme;
 import Exo4.ordreCroissant;
 import Exo6.Calc;
 import Exo7.Somme;
-import Exo7.Somme.*;
+import Exo8.Star;
+import Exo9.StarDown;
+import Exo10.Sapin;
 public class Main {
     public static void main(String[] args) {
 
@@ -12,8 +14,12 @@ public class Main {
         Somme.Additionner_2_elements();
         ProfitPerte.ProfitPerte();
         ordreCroissant.ordreCroissant();
-        Flemme.Flemme();*/
+        Flemme.Flemme();
         Somme.SommeFacto();
+        Star.Star();
+        StarDown.Downstar();*/
+Sapin.sapin();
+
     }
 
 
