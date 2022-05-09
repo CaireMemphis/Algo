@@ -13,14 +13,16 @@ public class Calc {
             System.out.println();
             System.out.print(" chiffre 1 : ");
             System.out.println();
-            un = scanChif.nextInt();
-            Scanner scanNom = new Scanner(System.in);
-            System.out.print("" +
-                    "(+, -, * ou /) :");
-            choix = scanNom.next();
+            un = scanChif.nextFloat();
+
+                Scanner scanNom = new Scanner(System.in);
+                System.out.print("" +
+                        "(+, -, * ou /) :");
+                choix = scanNom.next();
+
             System.out.println();
             System.out.print(" Chiffre 2 : ");
-            deux = scanChif.nextInt();
+            deux = scanChif.nextFloat();
             System.out.println(
             );
 
@@ -45,13 +47,19 @@ public class Calc {
                     break;
                 }
                 case "/": {
+                    if (un == 0 || deux == 0){
+                        System.out.println("erreur : pas de division par 0");
+                    }else {
                     float div = (un / deux);
                     System.out.printf(un + " / " + deux);
                     System.out.printf("  =  " + div);
-                    break;
-
+                    break;}
+                    }
+                default:{
+                    System.out.println("erreur");
                 }
-            }
+                }
+
             System.out.println();
             Scanner scanResp = new Scanner(System.in);
             System.out.print("Nouveau calcul = oui:1/non:2");
