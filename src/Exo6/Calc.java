@@ -25,9 +25,7 @@ public class Calc {
             deux = scanChif.nextFloat();
             System.out.println(
             );
-
             switch (choix) {
-
                 case "+": {
                     float somme = un + deux;
                     System.out.printf(un + " + " + deux);
