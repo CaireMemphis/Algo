@@ -3,14 +3,15 @@ import Exo2.Somme;
 import Exo3.ProfitPerte;
 import Exo5.Flemme;
 import Exo4.ordreCroissant;
+import Exo6.Calc;
 public class Main {
     public static void main(String[] args) {
         //Index.bonjour();
         //Somme.Additionner_2_elements();
         //ProfitPerte.ProfitPerte();
         //ordreCroissant.ordreCroissant();
-        Flemme.Flemme();
-
+        //Flemme.Flemme();
+Calc.Calc();
 
     }
 
