@@ -18,10 +18,10 @@ public class Temperature {
         fahrenheit.add(-5);
         fahrenheit.add(-10);
         fahrenheit.add(27);
-        //fahrenheit.add(-1);
+        fahrenheit.add(-1);
         fahrenheit.add(2);
         fahrenheit.add(-3);
-
+        fahrenheit.add(1);
 
         int tMin = 0;
         int tMinPlus = (int) Collections.max(fahrenheit);
@@ -50,9 +50,9 @@ public class Temperature {
         }
         System.out.println(InterPlus);
         System.out.println(InterMoins);
-if (InterMoins>=InterPlus){
-    System.out.println("La température la plus proche de 0°C est " + tMinPlus +"°C.");
+if (InterMoins<=InterPlus){
+    System.out.println("La température la plus proche de 0°C est " + tMinMoins +"°C.");
 }else {
-        System.out.println("La température la plus proche de 0°C est " + tMinMoins +"°C.");
+        System.out.println("La température la plus proche de 0°C est " + tMinPlus +"°C.");
     }
 }}
