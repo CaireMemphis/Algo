@@ -14,7 +14,7 @@ public class Majuscule {
         }
         while(!saisie.contentEquals("0"));
         System.out.println("vous avez saisie 0 fin de saisie:");
-        Arrays.sort(saisie);
+        //Arrays.sort(saisie);
         for(int i=0;i<saisie.length();i++)
         {
             System.out.println(saisie);

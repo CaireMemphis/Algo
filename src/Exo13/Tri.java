@@ -5,7 +5,7 @@ import java.util.ArrayList;
 public class Tri {
     public static void main(String[] args) {
 
-        int[] essai = {2, 5, 6, 4, 9, 6, 4, 1, 3, 7, 9, 12, 5, 14, 84};
+        int[] essai = {2, 5, 6, 4, 9, 6, 4, 1, 3, 7, 9, 12, 5, 14, 84,-2};
         afficher(essai);
         triageBulle(essai);
         //triageSelection(essai);
