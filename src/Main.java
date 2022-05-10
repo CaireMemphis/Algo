@@ -7,6 +7,7 @@ import Exo7.Somme;
 import Exo8.Star;
 import Exo9.StarDown;
 import Exo10.Sapin;
+import Exo11.Monnaie;
 public class Main {
     public static void main(String[] args) {
 
@@ -17,9 +18,9 @@ public class Main {
         Flemme.Flemme();
         Somme.SommeFacto();
         Star.Star();
-        StarDown.Downstar();*/
-Sapin.sapin();
-
+        StarDown.Downstar();
+Sapin.sapin();*/
+Monnaie.money();
     }
 
 
