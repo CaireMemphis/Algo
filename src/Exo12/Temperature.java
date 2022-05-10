@@ -7,13 +7,13 @@ import java.util.Collections;
 import java.util.List;
 public class Temperature {
     public static void main(String[] args) {
-        int[] essai = {2,-1,8,5,14,-10,-5,21,-2,1};
+        int[] essai = {2,8,5,14,-10,-5,21,-2};
         afficher(essai);
      celcius(essai);
     }
     public static void celcius(int [] fahrenheit){
-        int tMinPlus =0;
-        int tMinMoins= 0;
+        int tMinPlus = fahrenheit[0];
+        int tMinMoins = fahrenheit[0];
 
         for (int i = 0; i < fahrenheit.length; i++) {
             if (fahrenheit[i]>tMinPlus){
@@ -56,9 +56,12 @@ if (InterMoins<=InterPlus){
 }
 
 public static void afficher(int[] essai) {
-    for (int i = 0; i < essai.length; i++) {
-        System.out.print(essai[i]+" ");
+    System.out.print("[ ");
+    System.out.print(essai[0]+" ");
+    for (int i = 1; i < essai.length; i++) {
+        System.out.print(","+essai[i]+" ");
     }
+    System.out.print("]");
     System.out.println();
 }
 }
