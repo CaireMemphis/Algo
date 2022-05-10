@@ -77,10 +77,11 @@ do{
             if (total >= 10) {
                 total -= 10;
                 billet10 += 1;
+                total = Math.round(total*100.0)/100.0;
             }
         }while (total >= 10);
         if (billet10>0) { System.out.println("billet de 10 : "+ billet10);}
-        total = Math.round(total*100.0)/100.0;
+
         do{
             if (total >= 5) {
                 total -= 5;
