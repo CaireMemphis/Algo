@@ -33,7 +33,7 @@ public class RollerCoaster {
                     potentiel = placesAct+get;
 
             }while (potentiel<=totalPlaces);
-            total += placesAct * 1;
+            total += placesAct;
             System.out.println("places prises: "+ placesAct);
             placesAct = 0;
             System.out.printf(file +" : Caisse  : "+ total + " €");
