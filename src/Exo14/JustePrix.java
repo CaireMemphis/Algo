@@ -17,6 +17,7 @@ public class JustePrix {
         Scanner scan = new Scanner(System.in);
         int proposition = 0;
         for (int i = 1; i <= tentative; i++) {
+            System.out.println("----------------------------------------");
             System.out.print("Proposition " + i + "/" + tentative + " : ");
             proposition = scan.nextInt();
             System.out.println();
@@ -37,7 +38,6 @@ public class JustePrix {
             System.out.println("Essais ecoulés ... Perdu !!!");
             System.out.println("Juste Prix : "+prix+" €");
         }
-
     }
 
     public static void parametres() {
