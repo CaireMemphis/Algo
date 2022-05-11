@@ -35,6 +35,7 @@ public class RollerCoaster {
             }while (potentiel<=totalPlaces);
             total += placesAct;
             System.out.println("places prises: "+ placesAct);
+            System.out.println("apport : "+placesAct+" €");
             placesAct = 0;
             System.out.printf(file +" : Caisse  : "+ total + " €");
             System.out.println();
