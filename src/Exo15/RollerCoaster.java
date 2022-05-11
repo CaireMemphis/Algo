@@ -16,7 +16,7 @@ public class RollerCoaster {
         Random rand = new Random();
 
         for (int i = 0; i < 35; i++) {
-            nbPers = 0 + rand.nextInt(12 );
+            nbPers = 2 + rand.nextInt(12-2 );
             file.add(nbPers);
         }
         int get;
@@ -24,12 +24,12 @@ public class RollerCoaster {
         System.out.println(file);
         System.out.println("----------------------");
         for (int i = 0; i < tours; i++) {
-            get = (int) file.get((file.size()) - 1);
+            get = (int) file.get(0);
             do {
                 placesAct += get;
-                file.add(0, get);
-                file.remove((file.size() - 1));
-                get = (int) file.get((file.size()) - 1);
+                file.add((file.size() - 1), get);
+                file.remove(0);
+                get = (int) file.get(0);
                 potentiel = placesAct + get;
             } while (potentiel <= totalPlaces);
             total += placesAct;
