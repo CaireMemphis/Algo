@@ -10,7 +10,7 @@ public class RollerCoaster {
         int sum=0;
         int total = 0;
         ArrayList file = new ArrayList<>();
-        int tours = 5;
+        int tours = 10;
         file.add(2);
         file.add(3);
         file.add(5);
@@ -24,8 +24,8 @@ public class RollerCoaster {
         System.out.println(file);
         System.out.println("----------------------");
         for (int i = 0; i < tours; i++) {
+            get = (int) file.get((file.size())-1);
             do {
-                get = (int) file.get((file.size())-1);
                     placesAct += get;
                     file.add(0,get);
                     file.remove((file.size()-1));
@@ -38,10 +38,8 @@ public class RollerCoaster {
             placesAct = 0;
             System.out.printf(file +" : Caisse  : "+ total + " €");
             System.out.println();
-
+            System.out.println("-----------------------------");
         }
-
-        System.out.println("-----------------------------");
         System.out.println("total : " + total + " €");
     }
 }
